@@ -4,11 +4,17 @@
   padding-top: 46px;
   position: relative;
 
-  .aa {
+  @media screen and (max-width: 1050px) {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .puple-ball {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 728px;
+    //left: 728px;
+    left: 64%;
     top: -2px;
     border-radius: 50%;
     background: radial-gradient(
@@ -22,13 +28,20 @@
     box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
     filter: blur(5px);
     backdrop-filter: blur(2px);
+    @media screen and (max-width: 425px) {
+      width: 40px;
+      height: 40px;
+      left: 296px;
+      top: 290px;
+    }
   }
 
-  .ab {
+  .red-ball {
     position: absolute;
     width: 83px;
     height: 83px;
-    left: 368px;
+    //left: 368px;
+    left: 32%;
     top: 70px;
     border-radius: 50%;
     background: radial-gradient(
@@ -41,13 +54,19 @@
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
     backdrop-filter: blur(2px);
+
+    @media screen and (max-width: 425px) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
-  .ac {
+  .red-ball_small {
     position: absolute;
     width: 28px;
     height: 28px;
-    left: 701px;
+    // left: 701px;
+    left: 61.5%;
     top: 547px;
     border-radius: 50%;
     background: radial-gradient(
@@ -61,9 +80,16 @@
     box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
     filter: blur(2.5px);
     backdrop-filter: blur(2px);
+
+    @media screen and (max-width: 320px) {
+      width: 43px;
+      height: 43px;
+      left: 29px;
+      top: 462px;
+    }
   }
 
-  .ar {
+  .puple-light {
     position: absolute;
     width: 259px;
     height: 259px;
@@ -73,17 +99,28 @@
     background: #833ab4;
     opacity: 0.5;
     filter: blur(196px);
+
+    @media screen and (max-width: 320px) {
+      left: 258px;
+      top: 107px;
+    }
   }
 
-  .ae {
+  .red-light {
     position: absolute;
     width: 311px;
     height: 311px;
-    left: -102px;
+    // left: -102px;
+    left: -9%;
     top: 251px;
     border-radius: 50%;
     background: #961a1a;
     opacity: 0.5;
     filter: blur(196px);
+
+    @media screen and (max-width: 320px) {
+      left: -55px;
+      top: 241px;
+    }
   }
 }

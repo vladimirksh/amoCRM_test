@@ -12,11 +12,11 @@ function App() {
         <Route path="/" element={<Main />} />
       </Routes>
       <Footer />
-      <div className="aa"></div>
-      <div className="ab"></div>
-      <div className="ac"></div>
-      <div className="ar"></div>
-      <div className="ae"></div>
+      <div className="puple-ball"></div>
+      <div className="red-ball"></div>
+      <div className="red-ball_small"></div>
+      <div className="puple-light"></div>
+      <div className="red-light"></div>
     </div>
   );
 }

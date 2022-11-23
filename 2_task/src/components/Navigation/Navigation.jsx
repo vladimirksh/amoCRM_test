@@ -15,7 +15,7 @@ function Navigation() {
     return () => window.removeEventListener("resize", updateWindowSize);
   });
 
-  return <>{windowWidth > 768 ? <Menu /> : <MobileMenu />}</>;
+  return <>{windowWidth > 1050 ? <Menu /> : <MobileMenu />}</>;
 }
 
 export default Navigation;

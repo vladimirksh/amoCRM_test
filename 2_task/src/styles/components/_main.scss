@@ -4,8 +4,25 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 95px;
+    padding-bottom: 0px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-left: 14px;
+    align-items: flex-start;
+  }
+
   &__item {
     max-width: 362px;
+    z-index: 2;
+
+    @media screen and (max-width: 425px) {
+      max-width: 272px;
+    }
   }
 
   &__item:last-of-type {
@@ -13,6 +30,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media screen and (max-width: 425px) {
+      padding-top: 45px;
+      align-items: flex-start;
+    }
   }
 
   &__title-main {
@@ -23,6 +45,12 @@
     line-height: 58px;
     color: #e4e5ea;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 15px;
+    }
 
     span {
       font-family: $inter;
@@ -36,6 +64,11 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @media screen and (max-width: 425px) {
+        font-size: 36px;
+        line-height: 44px;
+      }
     }
   }
 
@@ -58,6 +91,9 @@
     text-align: right;
     color: #e4e5ea;
 
+    @media screen and (max-width: 425px) {
+      text-align: left;
+    }
     span {
       font-family: $inter;
       font-style: normal;
@@ -72,6 +108,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @media screen and (max-width: 425px) {
+        text-transform: lowercase;
+      }
     }
   }
 
@@ -82,6 +122,14 @@
     justify-content: flex-end;
     margin-top: 40px;
     margin-bottom: 61px;
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 119px auto;
+      grid-row-gap: 14px;
+      grid-column-gap: 5px;
+      margin-top: 20px;
+      margin-bottom: 59px;
+    }
   }
 
   &__list-title {
@@ -95,6 +143,27 @@
     text-transform: uppercase;
     color: #e4e5ea;
     margin-bottom: 6px;
+
+    span {
+      @media screen and (max-width: 425px) {
+        background: linear-gradient(92deg, #fcb045 36.99%, #fd1d1d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-right: 5px;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 
   &__list-discription {
@@ -119,6 +188,11 @@
     line-height: 19px;
     text-align: center;
     color: #e4e5ea;
+
+    @media screen and (max-width: 425px) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__button:hover {
